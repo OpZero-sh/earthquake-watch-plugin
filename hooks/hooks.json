@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "^mcp__plugin_earthquake-watch_usgs__(recent_earthquakes|earthquakes_near|get_earthquake)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/local-times.cjs\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

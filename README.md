@@ -32,7 +32,9 @@ Each skill is a set of written instructions that Claude loads when a request mat
 
 In Cowork or Claude Code, the `event-match` agent handles harder matching: a vague time, a cluster of events, or several reports at once. It can call only the three read only tools of the service listed below.
 
-This plugin has no hooks and starts no local process.
+## Hook
+
+One `PostToolUse` hook runs in Claude Code after any of the three tools returns. It is the script `hooks/local-times.cjs`. It converts each UTC time in the result to your computer's time zone and works out how long ago the event was, then hands Claude those figures, so local times in an answer come from a calculation. It needs Node.js on your PATH, reads the tool result from standard input, and does not touch files or the network. It never interrupts a tool call.
 
 ## Sources and coverage
 
