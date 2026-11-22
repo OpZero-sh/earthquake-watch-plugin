@@ -13,6 +13,14 @@
       {
         "id": "quake-brief",
         "path": "skills/quake-brief/SKILL.md"
+      },
+      {
+        "id": "felt-check",
+        "path": "skills/felt-check/SKILL.md"
+      },
+      {
+        "id": "event-record",
+        "path": "skills/event-record/SKILL.md"
       }
     ],
     "mcpServers": [
