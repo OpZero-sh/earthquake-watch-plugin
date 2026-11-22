@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "earthquake-watch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Earthquake Watch",
   "description": "Find recent USGS earthquakes near a place and unpack the event record behind a headline or felt report.",
   "compat": {
