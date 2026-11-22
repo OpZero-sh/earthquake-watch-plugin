@@ -1,0 +1,10 @@
+{
+  "usgs": {
+    "url": "https://earthquake-watch.mcp.opzero.sh/mcp",
+    "allowed_tools": [
+      "earthquakes_near",
+      "get_earthquake",
+      "recent_earthquakes"
+    ]
+  }
+}

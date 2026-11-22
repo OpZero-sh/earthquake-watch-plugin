@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "name": "earthquake-watch",
+  "version": "1.0.0",
+  "displayName": "Earthquake Watch",
+  "description": "Find recent USGS earthquakes near a place and unpack the event record behind a headline or felt report.",
+  "compat": {
+    "source": "native",
+    "manifestDir": ".muse-plugin"
+  },
+  "capabilities": {
+    "skills": [
+      {
+        "id": "quake-brief",
+        "path": "skills/quake-brief/SKILL.md"
+      }
+    ],
+    "mcpServers": [
+      {
+        "id": "usgs",
+        "transport": "http",
+        "url": "https://earthquake-watch.mcp.opzero.sh/mcp"
+      }
+    ]
+  }
+}

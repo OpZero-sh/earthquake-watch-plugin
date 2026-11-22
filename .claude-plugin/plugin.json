@@ -1,0 +1,17 @@
+{
+  "name": "earthquake-watch",
+  "version": "1.0.0",
+  "description": "Find recent USGS earthquakes near a place and unpack the event record behind a headline or felt report.",
+  "author": {
+    "name": "OpZero"
+  },
+  "homepage": "https://github.com/OpZero-sh/earthquake-watch-plugin",
+  "repository": "https://github.com/OpZero-sh/earthquake-watch-plugin",
+  "displayName": "Earthquake Watch",
+  "documentationUrl": "https://github.com/OpZero-sh/earthquake-watch-plugin#readme",
+  "privacyPolicyUrl": "https://opzero.sh/privacy",
+  "supportUrl": "https://opzero.sh/support",
+  "termsOfServiceUrl": "https://opzero.sh/terms",
+  "icon": "./assets/icon.png",
+  "license": "LicenseRef-OpZero-Plugin"
+}
