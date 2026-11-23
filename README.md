@@ -48,10 +48,10 @@ The plugin connects Claude to one hosted service over HTTPS. A request carries o
 
 - [earthquake-watch](https://earthquake-watch.mcp.opzero.sh/) at `earthquake-watch.mcp.opzero.sh` · [Privacy](https://earthquake-watch.mcp.opzero.sh/?page=privacy) · [Support](https://earthquake-watch.mcp.opzero.sh/?page=support)
 
-The repository also holds files for other clients. The plugin never runs them. They do something only if you run them yourself from a checkout.
+The repository also holds configuration files for other clients. The plugin never runs them. The two scripts that read them are not in this repository. They live in the catalog repository, https://github.com/OpZero-sh/plugins, and do something only if you clone it and run them yourself.
 
-- `scripts/build_openai.py` reads files in this repository and writes a ZIP package to the folder you name. It makes no network request.
-- `integrations/grok_example.py` prints a request preview when run with `--dry-run`. Without that flag it reads `XAI_API_KEY`, and `XAI_MODEL` if set, from your environment and sends your question and the service URL to the xAI API at `api.x.ai`.
+- `tools/build_openai.py` in the catalog reads files in a checkout of this repository and writes a ZIP package to the folder you name. It makes no network request.
+- `tools/grok_example.py` in the catalog prints a request preview when run with `--dry-run`. Without that flag it reads `XAI_API_KEY`, and `XAI_MODEL` if set, from your environment and sends your question and the service URL to the xAI API at `api.x.ai`.
 - `integrations/grok-servers.json` and the `integrations/openai` folder are configuration read by those two scripts.
 
 ## In use
